@@ -232,7 +232,7 @@ I experimented with different models LDA, Decision Trees, Extra Trees, Random Fo
 
 - Random Forest Classifier
 
-  - Accuracy: \~
-  - Precision: \~
-  - Recall: \~
-  - F1 Score: \~
+  - Accuracy: \~93.3%
+  - Precision: \~91%
+  - Recall: \~95%
+  - F1 Score: \~92%
