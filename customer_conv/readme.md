@@ -63,7 +63,7 @@ print("Data shape", df.shape)
 
 ### Step 5: Analyzing Target Distribution
 
-The target variable (`y`) distribution is examined using `value_counts()` to identify class imbalance. This step ensures appropriate handling of imbalanced datasets.
+The target variable (`y`) distribution is examined using `value_counts()` to identify how balanced our target is. This step ensures appropriate handling of imbalanced datasets. We have to do this because our model will look at the data and see that most people didn't by and tend to predict in that direction. So we need to eliminate this imbalance.
 
 ```python
 distribute = df['y'].value_counts()
@@ -228,11 +228,11 @@ print("F1 Score:", f1 * 100)
 3. Use feature selection techniques to identify the most critical variables.
 4. Validate the model on an unseen test set to ensure generalizability.
 
-I experimented with different models LDA, Decision Trees, Extra Trees, Random Forest with Random Forest scoring about 95% in all metrics tests followed by Extra Trees with the GaussianNB in last place. This tells us that the RF model is the best for this evaluation.
+I experimented with different models LDA, Decision Trees, Extra Trees, Random Forest with Random Forest having the highest score in all metric tests followed extremely closely by Extra Trees with the GaussianNB performing the worst. This tells us that the RF model is the best for this evaluation.
 
 - Random Forest Classifier
 
   - Accuracy: \~93.3%
-  - Precision: \~91%
-  - Recall: \~95%
-  - F1 Score: \~92%
+  - Precision: \~91.4%
+  - Recall: \~95.5%
+  - F1 Score: \~93.4%
